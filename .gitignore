@@ -1,0 +1,41 @@
+# ─── API Keys & Secrets ───────────────────────────────
+# NEVER commit .env — it contains your private API keys
+whatsapp_agent/.env
+.env
+*.env
+
+# ─── Python ───────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+pip-log.txt
+
+# ─── Virtual Environments ─────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ─── macOS ────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ─── IDE ──────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ─── Logs ─────────────────────────────────────────────
+*.log
+logs/
