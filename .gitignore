@@ -1,41 +1,66 @@
-# ─── API Keys & Secrets ───────────────────────────────
-# NEVER commit .env — it contains your private API keys
-whatsapp_agent/.env
+# ════════════════════════════════════════════════════
+# QUANTUM ALPHA — .gitignore
+# Personal workflow — keep ALL secrets off GitHub
+# ════════════════════════════════════════════════════
+
+# ─── NEVER commit these ───────────────────────────
 .env
 *.env
+.env.*
+!.env.example          # Allow the template (no real keys)
+whatsapp_agent/.env
+whatsapp_agent/logs/
 
-# ─── Python ───────────────────────────────────────────
+# ─── Python ───────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-.Python
 *.egg-info/
 dist/
 build/
 .eggs/
-*.egg
 pip-log.txt
 
-# ─── Virtual Environments ─────────────────────────────
+# ─── Virtual Environments ─────────────────────────
 venv/
 .venv/
 env/
-.env/
 ENV/
 
-# ─── macOS ────────────────────────────────────────────
+# ─── Secrets / Keys (belt & suspenders) ──────────
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+*.secret
+
+# ─── Logs (may contain sensitive data) ───────────
+*.log
+logs/
+whatsapp_agent/logs/
+
+# ─── macOS ────────────────────────────────────────
 .DS_Store
 .AppleDouble
 .LSOverride
 ._*
+.Spotlight-V100
+.Trashes
 
-# ─── IDE ──────────────────────────────────────────────
+# ─── IDE / Editor ─────────────────────────────────
 .vscode/settings.json
 .idea/
 *.swp
 *.swo
+*.bak
 
-# ─── Logs ─────────────────────────────────────────────
-*.log
-logs/
+# ─── Jupyter (if used for analysis) ──────────────
+.ipynb_checkpoints/
+
+# ─── Temporary / scratch ─────────────────────────
+tmp/
+temp/
+scratch/
