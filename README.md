@@ -30,7 +30,7 @@ python main.py
 You'll see:
 ```
 ⚡ Quantum Alpha WhatsApp Agent — ONLINE
-   Instance : 7107596750
+   Instance : XXXXXXXXXX
    Polling  : every 2 seconds
 ```
 
